@@ -1,0 +1,147 @@
+
+
+.top-search-container {
+  background: linear-gradient(to left, #3662b4, #6778c0, #3662b4);
+  padding: 15px 10px;
+  position: relative;
+  z-index: 999;
+}
+
+
+.search-box {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 50px;
+  padding: 8px;
+  gap: 10px;
+}
+
+
+.search-item {
+  flex: 1;
+  background: white;
+  padding: 12px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.search-btn {
+  background: tomato;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.dropdown-box {
+  max-width: 1000px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75px;
+  z-index: 1000;
+}
+
+.place-pill {
+  border: 1px solid orange;
+  color: orange;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.place-pill:hover {
+  background: orange;
+  color: white;
+}
+
+
+
+@media (max-width: 992px) {
+  .search-box {
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+
+  .search-item {
+    flex: 48%;
+    text-align: center;
+  }
+
+  .search-btn {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .dropdown-box {
+    width: 95%;
+    top: 140px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .search-box {
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .search-item {
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .search-btn {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .dropdown-box {
+    width: 95%;
+    top: 220px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .place-pill {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .search-item {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .search-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

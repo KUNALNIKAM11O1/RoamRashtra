@@ -1,0 +1,29 @@
+
+.custom-dark-table {
+  border: 1px solid #000;
+}
+
+
+.custom-dark-table thead th {
+  background-color: #212529;
+  color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+
+.custom-dark-table tbody td {
+  background-color: #2b2f33;
+  color: #f1f1f1;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.custom-dark-table tbody tr:hover td {
+  background-color: #343a40;
+}
+
+
+.custom-dark-table i {
+  cursor: pointer;
+}
