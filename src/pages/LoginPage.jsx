@@ -18,7 +18,7 @@ const LoginPage = () => {
          
     try{
 
-      const result = await axios.get('https://crud-app-task.onrender.com//register')
+      const result = await axios.get('https://crud-app-task.onrender.com/register')
 
       setData(result.data)
 
@@ -44,7 +44,7 @@ const LoginPage = () => {
   e.preventDefault()
 
   try {
-    const result = await axios.get('https://crud-app-task.onrender.com//register', {
+    const result = await axios.get('https://crud-app-task.onrender.com/register', {
       params: { email, password }
     })
 
