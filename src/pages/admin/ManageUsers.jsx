@@ -9,7 +9,7 @@ const ManageUsers = () => {
 
   const FetchInfo = async () => {
     try {
-      const result = await axios.get('http://localhost:3000/register')
+      const result = await axios.get('https://crud-app-task.onrender.com//register')
       setData(result.data)
     } catch (err) {
       console.log(err)
@@ -33,7 +33,7 @@ const ManageUsers = () => {
 
   const deleteInfo = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/register/${id}`)
+      await axios.delete(`https://crud-app-task.onrender.com//register/${id}`)
       setData(data.filter(val => val.id !== id))
     } catch (err) {
       console.log(err)

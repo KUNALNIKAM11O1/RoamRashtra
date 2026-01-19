@@ -18,7 +18,7 @@ const EditPage = () => {
 
     try{
 
-    const result = await axios.get(`http://localhost:3000/register/${id}`)
+    const result = await axios.get(`https://crud-app-task.onrender.com//register/${id}`)
 
     setData({name:result.data.name,email:result.data.email,number:result.data.number,password:result.data.result})
 
@@ -46,7 +46,7 @@ const EditPage = () => {
 
     try{
 
-        await axios.put(`http://localhost:3000/register/${id}`,data)
+        await axios.put(`https://crud-app-task.onrender.com//register/${id}`,data)
 
         toast.success("User data updated")
 
