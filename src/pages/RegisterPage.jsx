@@ -23,7 +23,7 @@ const RegisterPage = () => {
 
     try{
 
-       const result = await axios.post('https://crud-app-task.onrender.com//register',formdata)
+       const result = await axios.post('https://crud-app-task.onrender.com/register',formdata)
 
         setFormData(result.data)
 

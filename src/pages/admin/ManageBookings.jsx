@@ -7,7 +7,7 @@ const ManageBookings = () => {
 
   const fetchBookings = async () => {
     try {
-      const res = await axios.get("https://crud-app-task.onrender.com//bookings");
+      const res = await axios.get("https://crud-app-task.onrender.com/bookings");
       setBookings(res.data);
     } catch (error) {
       console.error("Error fetching bookings:", error);
@@ -21,7 +21,7 @@ const ManageBookings = () => {
 
   const updateStatus = async (id, newStatus) => {
     try {
-      await axios.patch(`https://crud-app-task.onrender.com//bookings/${id}`, {
+      await axios.patch(`https://crud-app-task.onrender.com/bookings/${id}`, {
         status: newStatus,
       });
       fetchBookings();

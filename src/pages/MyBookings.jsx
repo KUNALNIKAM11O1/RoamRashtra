@@ -12,7 +12,7 @@ const MyBookings = () => {
   const fetchBookings = async () => {
     if (!user) return;
     try {
-      const res = await axios.get("https://crud-app-task.onrender.com//bookings");
+      const res = await axios.get("https://crud-app-task.onrender.com/bookings");
       // Filter bookings for the current user
       const userBookings = res.data.filter(
         (b) => b.email === user.email
@@ -38,7 +38,7 @@ const MyBookings = () => {
 
   const handleCancel = async (id) => {
     try {
-      await axios.patch(`https://crud-app-task.onrender.com//bookings/${id}`, {
+      await axios.patch(`https://crud-app-task.onrender.com/bookings/${id}`, {
         status: "Cancelled",
       });
       toast.success("Booking cancelled successfully!");
