@@ -20,7 +20,7 @@ function PackageCard({name,price,para,btn1,img}) {
       };
 
       try {
-        await axios.post("http://localhost:3000/bookings", bookingData);
+        await axios.post("https://crud-app-task.onrender.com//bookings", bookingData);
         toast.success("Booking successful!");
       } catch (error) {
         console.error("Error booking tour:", error);
